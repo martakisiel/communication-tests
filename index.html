@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <link rel="stylesheet" href="./intex.css">
+</head>
+
+<body>
+
+    <div class="container dflex justify-content-center bgContainer textContainer">
+        <form>
+            <p id="todayDate-el">Date: </p>
+            <span>
+                <h3>Choose time of Holy Mass: </h3>
+            </span>
+
+            <select id="mass" name="mass">
+                <option value="0700">07:00</option>
+                <option value="0830">08:30</option>
+                <option value="1000">10:00</option>
+                <option value="1130">11:30</option>
+                <option value="1800">18:00</option>
+
+            </select>
+        </form>
+
+        <h1>People entered:</h1>
+<div class="flex-container">
+        
+        <div>
+            <h2 id="countM-el">0</h2>
+            <button id="incrementM-btn" onclick="incrementM()">MALE</button>
+        </div>
+        <div>
+            <h2 id="countF-el">0</h2>
+
+            <button id="incrementF-btn" onclick="incrementF()">FEMALE</button><br>
+        </div>
+    </div>
+        <button id="save-btn" onclick="save()">SAVE</button>
+        <p id="save-el">Entries: </p>
+
+        <button id="send-btn" onclick="send()">Send to server</button>
+    </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
